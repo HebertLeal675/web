@@ -6,10 +6,16 @@
     list-style: none;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #f0f4f8;
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -32,12 +38,8 @@ body {
     justify-content: space-between;
 }
 
-.logo {
-    font-size: 28px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
+.logo-img {
+    height: 30px; /* Ajusta la altura de la imagen del logo según sea necesario */
 }
 
 .menu .navbar ul {
@@ -81,6 +83,26 @@ h1 {
     color: #333;
     font-size: 36px;
     font-weight: 700;
+}
+
+.berserk-img {
+    display: block;
+    margin: 30px auto;
+    max-width: 80%; /* Ajusta el tamaño de la imagen aquí */
+}
+
+footer {
+    background-color: #0072ff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
 }
 
 @media (max-width: 991px) {
